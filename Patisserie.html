@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patisserie</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <select>
+        <optgroup label="Home">
+            <option selected>Home</option>
+            <option>Socials</option>
+        </optgroup>
+        <optgroup label="Order">
+            <option>Crossiants</option>
+            <option>Eclairs</option>
+            <option>Macarons</option>
+            <option>Pain au chocolat</option>
+            <option>Madeleine</option>
+            <option>Danishes</option>
+        </optgroup>
+    </select>
+    <select>
+        <optgroup label="Visuals">
+            <option selected>Light Mode</option>
+            <option>Dark Mode</option>
+        </optgroup>
+    </select>
+    <i class="fas fa-map-pin"></i>
+    <div class="container">
+    <h1 class="textClass" id="h1ID">Patisserie</h1>
+    <h2 class="textClass italicClass">Currently closed. Please come again later!</h2>
+    <hr><br>
+    <div class="box">
+        <p>We're hiring!</p>
+        <p>Apply in store or call xxx-xxx-xxxx</p>
+    </div>
+    <p>our products!</p>
+    <!--table of prices-->
+    <table>
+        <tr>
+            <td>Pastry</td>
+            <td>Price</td>
+        </tr>
+        <tr>
+            <td>Croissants(2)</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td>Eclairs(2)</td>
+            <td>$3</td>
+        </tr>
+        <tr>
+            <td>Macarons(2)</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td>Pain au chocolat(1)</td>
+            <td>$3</td>
+        </tr>
+        <tr>
+            <td>Madeleine(2)</td>
+            <td>$2</td>
+        </tr>
+        <tr>
+            <td>Danishes</td>
+            <td>$4</td>
+        </tr>
+    </table><br>
+
+    <div class="containerSLIDES">
+        <div class="slide">
+            <p>Today's spotlight:</p>
+            <p>Fresh crossaints! Order now!</p>
+            <img src="crossaint.jfif"><br>
+        </div>
+        <div class="slide">
+            <p>Our Sponsor: OMBM</p>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i=0; i<slides.length; i++) {
+        slides[i].style.display = "none"
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideInex=1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 2000);
+}
+
+showSlides();
+
+    </script>
+    <p>more resources:</p>
+    <a href="https://www.thefrenchbakery.com/ordernow/" class="link">Order from our friends!</a><br>
+    <a href="https://www.youtube.com/watch?v=hxABP6In6Gw" class="link">Watch this video!</a>
+    <h2 class="textClass italicClass">Baked fresh every day, pastries to fuel work and play.</h2>
+    <h3 class="textClass">Est. 2023</h3>
+    <h4 class="textClass" id="foundedID">Founded by Fiona</h4>
+    <h4 class="textClass" id="foundedID">Bellevue, Washington</h4>
+
+    <!-- <h4 class="textClass">Sign in here! (IN PROGRESS)</h4> -->
+    <!-- <input type="text" id="email" value="fionacamp425@gmail.com">
+    <input type="password" id="password" value="patisseriepassword">
+    <input type="submit" id="submit" onsubmit="checkData()"">
+    <script>
+        function checkData(){
+            let email = document.getElementByID("email").value;
+            let pass = document.getElementByID("password").value;
+            if (email == "fionacamp425@gmail.com && pass == "patisseriepassword"{
+                document.getElementByID("res").innerHTML = "Correct";
+            }
+            else {
+            document.getElementByID("res").innerHTML = "Wrong"
+            }
+        }
+    </script> -->
+</div>
+</body>
+</html>

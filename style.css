@@ -1,0 +1,74 @@
+
+body {
+    background :url("Screenshot_20230807_021516.png")
+}
+
+body{
+    background-size: cover;
+}
+
+body{
+    background-repeat: no-repeat;
+}
+
+.textClass{
+    text-align: center;
+}
+
+p{
+    font-family: cursive;
+    color: rgb(230, 171, 180);
+}
+
+.textClass{
+    color: hotpink
+}
+
+.italicClass{
+    font-style: italic;
+}
+
+#foundedID{
+    font-weight: 500;
+}
+
+.link:link{
+    color: rgb(255, 237, 251);
+}
+
+.link:visited{
+    color:rgb(203, 127, 222);
+}
+
+.link:hover{
+    color: blueviolet;
+    background-color: lightpink;
+}
+
+.box{
+    background-color: pink;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid rgb(139, 0, 127);
+    margin: 40px;
+}
+
+.box p{
+    color:black;
+}
+
+.container {
+    width: device-width;
+    height: device-height;
+}
+
+.containerSLIDES {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
